@@ -1,15 +1,14 @@
 
-body ul{
-
-list-style: none;
-
+body ul {
+   list-style: none;
+   color: #A7AEB0;
 }
 
 img {
   max-width: 100%;
 }
 
-a{
+a {
   color: black;
   text-decoration:none;
   font-weight: bolder;
@@ -21,41 +20,45 @@ a{
   float: left;
   padding: 0 5px 0 5px;
   overflow: hidden;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d9d9d9;
+  position: relative;
 }
 
-.octocat img{
+.octocat img {
   border: 1px solid #d9d9d9;
 }
 
 .authors{
-  max-height: 100%;
   margin bottom:20px;
   float: right;
   display: inline-block;
   border: none;
+  padding-top: 5px;
+  padding:0px;
+  padding-left: 10px;
 }
 
 .authors img {
-
-
-  width: 25px;
+  width: 18px;
   border-radius: 20%;
   margin-right: 0px;
   float: right;
-
 }
 
 .image-footer{
   font-size: .9em;
   
   width: 100%;
+  padding-top: 5px;
 }
+
 
 .image-number{
 display: inline-block;
 float:left;
 font-size: .8em;
-width: 20px;
+width: 10%;
 
 }
 
@@ -64,10 +67,26 @@ width: 20px;
 }
 
 
-.image-caption{
+.image-caption {
   display: inline-block;
   font-size: .8em;
   float: right;
-  width: 80%;
+  width: 70%;
+  text-align: right;
+}
+
+
+/*TRIANGLE RELATIVE TO .octocat*/
+
+.image-footer:before{
+content:"";
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 6px 3px 0 3px;
+border-color: #9e9e9e transparent transparent transparent;
+
+position: relative;
+left: 245px;
 
 }
