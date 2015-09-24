@@ -1,4 +1,5 @@
 
+
 body ul {
    list-style: none;
    color: #A7AEB0;
@@ -15,14 +16,12 @@ a {
 }
 
 .octocat {
-  max-width: 30%;
+  width: 300px;
   display: inline-block;
-  float: left;
   padding: 0 5px 0 5px;
-  overflow: hidden;
   padding-bottom: 20px;
   border-bottom: 1px solid #d9d9d9;
-  position: relative;
+  margin-right: 10px;
   
 }
 
@@ -32,12 +31,12 @@ a {
 
 .authors{
   margin bottom:20px;
-  float: right;
   display: inline-block;
   border: none;
   padding-top: 5px;
   padding:0px;
   padding-left: 5px;
+  vertical-align: middle;
 }
 
 .authors img {
@@ -52,6 +51,8 @@ a {
   
   width: 100%;
   padding-top: 5px;
+  position: relative;
+  overflow: hidden;
 }
 
 
@@ -79,17 +80,17 @@ font-family: 'Arial', ;
 }
 
 
-/*TRIANGLE RELATIVE TO .octocat*/
+/*TRIANGLE RELATIVE TO .image-footer*/
 
 .image-footer:before{
 content: "";
 width: 0;
 height: 0;
 border-style: solid;
-border-width: 6px 3px 0 3px;
+border-width: 10px 8.5px 0 8.5px;
 border-color: #919394 transparent transparent transparent;
 
 position: absolute;
-left: 241px;
-top:  251px;
+left: 282px;
+top: -4px;
 }
